@@ -179,7 +179,7 @@ class ProjectItem extends Component<HTMLUListElement, HTMLLIElement> implements 
   }
 
   renderContent() {
-    console.log(this.project);
+    // console.log(this.project);
     this.element.querySelector('h2')!.textContent = this.project.title;
     this.element.querySelector('h3')!.textContent = this.persons + ' assigned';
     this.element.querySelector('p')!.textContent = this.project.description;
@@ -317,7 +317,7 @@ class ProjectInput extends Component<HTMLDivElement, HTMLFormElement> {
     const userInput = this.gatherUserInput();
     if (Array.isArray(userInput)) {
       const [title, desc, people] = userInput;
-      console.log(title, desc, people);
+      // console.log(title, desc, people);
       projectState.addProject(title, desc, people);
       this.clearInputs();
     }
