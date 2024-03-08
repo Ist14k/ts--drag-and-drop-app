@@ -7,7 +7,9 @@ html {
 }
 
 body {
-  margin: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 label,
@@ -93,6 +95,10 @@ button:active {
   margin: 1rem;
 }
 
+.projects li:hover {
+  background: white;
+}
+
 .projects li h2 {
   color: #ff0062;
   margin: 0.5rem 0;
@@ -124,4 +130,19 @@ button:active {
   padding: 1rem;
   border: 1px solid #ff0062;
   background: #f7f7f7;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0.5rem auto;
+}
+
+button {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+#user-input {
+  width: auto;
 }
